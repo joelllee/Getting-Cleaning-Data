@@ -1,12 +1,12 @@
 # Importing the data from the files
-trainingData_x = read.table("C:\\Users\\Joel\\Desktop\\MOOC Course\\Getting and Cleaning Data\\getdata-projectfiles-UCI HAR Dataset\\train\\X_train.txt")
-testingData_x = read.table("C:\\Users\\Joel\\Desktop\\MOOC Course\\Getting and Cleaning Data\\getdata-projectfiles-UCI HAR Dataset\\test\\X_test.txt")
+trainingData_x = read.table("getdata-projectfiles-UCI HAR Dataset/train/X_train.txt")
+testingData_x = read.table("getdata-projectfiles-UCI HAR Dataset/test/X_test.txt")
 
-trainingData_y = read.table("C:\\Users\\Joel\\Desktop\\MOOC Course\\Getting and Cleaning Data\\getdata-projectfiles-UCI HAR Dataset\\train\\y_train.txt")
-testingData_y = read.table("C:\\Users\\Joel\\Desktop\\MOOC Course\\Getting and Cleaning Data\\getdata-projectfiles-UCI HAR Dataset\\test\\y_test.txt")
+trainingData_y = read.table("getdata-projectfiles-UCI HAR Dataset/train/y_train.txt")
+testingData_y = read.table("getdata-projectfiles-UCI HAR Dataset/test/y_test.txt")
 
-trainingSubject = read.table("C:\\Users\\Joel\\Desktop\\MOOC Course\\Getting and Cleaning Data\\getdata-projectfiles-UCI HAR Dataset\\train\\subject_train.txt")
-testingSubject = read.table("C:\\Users\\Joel\\Desktop\\MOOC Course\\Getting and Cleaning Data\\getdata-projectfiles-UCI HAR Dataset\\test\\subject_test.txt")
+trainingSubject = read.table("getdata-projectfiles-UCI HAR Dataset/train/subject_train.txt")
+testingSubject = read.table("getdata-projectfiles-UCI HAR Dataset/test/subject_test.txt")
 
 xMerged = rbind(trainingData_x, testingData_x)
 yMerged = rbind(trainingData_y, testingData_y)
@@ -14,9 +14,9 @@ subjectMerged = rbind(trainingSubject, testingSubject)
 
 # Obtain the Features Needed
 
-features = read.table("C:\\Users\\Joel\\Desktop\\MOOC Course\\Getting and Cleaning Data\\getdata-projectfiles-UCI HAR Dataset\\features.txt")
+features = read.table("getdata-projectfiles-UCI HAR Dataset/features.txt")
 ColNoToExtract <- grep(".*Mean.*|.*mean.*|.*Std.*|.*std.*", features[,2])
-activityLabels = read.table("C:\\Users\\Joel\\Desktop\\MOOC Course\\Getting and Cleaning Data\\getdata-projectfiles-UCI HAR Dataset\\activity_labels.txt")
+activityLabels = read.table("getdata-projectfiles-UCI HAR Dataset/activity_labels.txt")
 
 #Extracting the Features
 yMergedLabels = vector()
