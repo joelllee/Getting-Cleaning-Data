@@ -11,7 +11,7 @@
 
 # Data
 
-The data is taken from the "Human Activity Recognition Using Smartphones Data Set" and is taken from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+The data is taken from the "Human Activity Recognition Using Smartphones Data Set" and is available at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 # Transformations
 
